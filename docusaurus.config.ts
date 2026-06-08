@@ -98,6 +98,33 @@ const config: Config = {
         },
         {
           type: 'dropdown',
+          label: 'Learning Tracks',
+          position: 'left',
+          items: [
+            {
+              label: 'Linux Internals',
+              to: '/docs/linux-internals',
+            },
+            {
+              label: 'OpenBMC Architecture',
+              to: '/docs/openbmc-architecture',
+            },
+            {
+              label: 'Yocto',
+              to: '/docs/yocto',
+            },
+            {
+              label: 'Docker',
+              to: '/docs/docker',
+            },
+            {
+              label: 'Firmware Debugging',
+              to: '/docs/firmware-debugging',
+            },
+          ],
+        },
+        {
+          type: 'dropdown',
           label: 'Repositories',
           position: 'right',
           items: [
