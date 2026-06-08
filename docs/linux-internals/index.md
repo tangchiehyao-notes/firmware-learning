@@ -7,6 +7,7 @@ title: Linux Internals
 
 ## 預計收錄主題
 
+- Linux 架構
 - User Space vs Kernel Space
 - System Call
 - Process / Thread
@@ -14,12 +15,16 @@ title: Linux Internals
 - Filesystem / I/O
 - Linux Debugging
 
+## 已同步到網站的文章
+
+- [Linux 架構](./01-linux-architecture.md)
+
 ## Repository
 
 - [linux-internals-notes](https://github.com/tangchiehyao-notes/linux-internals-notes)
 
 ## 目前狀態
 
-- 站內先維持簡單入口
-- 詳細內容先放在獨立 repo
-- 之後再依整理進度回收到這個 Hub
+- 第一篇總覽章節已同步進站內
+- 詳細內容會依整理進度逐步回收到這個 Hub
+- `linux-internals-notes` 仍保留作為原始筆記 repo

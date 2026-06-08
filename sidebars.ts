@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     'learning-roadmap',
     'index',
     'linux-internals/index',
+    'linux-internals/linux-architecture',
     'openbmc-architecture/index',
     'yocto/index',
     'docker/index',
