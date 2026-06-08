@@ -35,6 +35,14 @@ body {
   border-bottom: 1px solid rgba(15, 118, 110, 0.08);
 }
 
+@media (max-width: 996px) {
+  /* Avoid creating a containing block that shrinks the mobile sidebar overlay. */
+  .navbar {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
 .navbar__title {
   letter-spacing: -0.02em;
   font-weight: 700;
