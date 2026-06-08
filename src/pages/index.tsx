@@ -43,12 +43,6 @@ const topicCards = [
     repo: 'https://github.com/tangchiehyao-notes/linux-internals-notes',
   },
   {
-    title: 'Modern C++',
-    summary: 'Ownership、RAII、move semantics、template 與 concurrency 的工程實作觀點。',
-    to: '/docs/modern-cpp',
-    repo: 'https://github.com/tangchiehyao-notes/modern-cpp-notes',
-  },
-  {
     title: 'OpenBMC Architecture',
     summary: '從 boot flow 到 D-Bus、sensor、Redfish 與管理協定的整體架構。',
     to: '/docs/openbmc-architecture',
@@ -118,35 +112,17 @@ export default function Home(): ReactNode {
                 <span className={styles.eyebrow}>Firmware Engineer Knowledge Base</span>
                 <h1 className={styles.heroTitle}>Firmware Learning Hub</h1>
                 <p className={styles.heroSubtitle}>
-                  以 OpenBMC / Embedded Linux 為主軸，集中整理 Linux internals、Modern
-                  C++、Yocto、Docker 與 Firmware Debugging 的長期知識庫。
+                  以 OpenBMC / Embedded Linux 為主軸，先整理學習地圖、主題入口與各條知識線的長期維護方向。
                 </p>
                 <div className={styles.heroActions}>
                   <Link className="button button--primary button--lg" to="/docs">
-                    進入文件中心
+                    進入 Introduction
                   </Link>
                   <Link
                     className="button button--secondary button--lg"
                     to="/docs/learning-roadmap">
                     查看學習地圖
                   </Link>
-                </div>
-                <div className={styles.heroMeta}>
-                  <span>Markdown-driven</span>
-                  <span>GitHub Pages</span>
-                  <span>Interview-oriented</span>
-                  <span>Long-term Maintainable</span>
-                </div>
-              </div>
-              <div className={styles.heroPanel}>
-                <div className={styles.panelCard}>
-                  <span className={styles.panelLabel}>Hub Focus</span>
-                  <h2>從學習筆記進化成可展示的工程作品集</h2>
-                  <ul>
-                    <li>把零散筆記整理成可查閱的知識架構</li>
-                    <li>保留每個主題的成長軌跡與深入程度</li>
-                    <li>讓面試官一眼看到你的技術地圖與思考方式</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -159,8 +135,7 @@ export default function Home(): ReactNode {
               <span className={styles.kicker}>Learning Roadmap</span>
               <h2>技術學習地圖</h2>
               <p>
-                這個 Hub 的設計不是把主題平鋪直敘，而是用一條對 Firmware Engineer
-                比較順手的學習路線把它們串起來。
+                這裡先把主題之間的關係排清楚，再決定哪些內容要先進站內，哪些先維持在獨立 repo。
               </p>
             </div>
             <div className={styles.roadmapGrid}>
@@ -178,10 +153,10 @@ export default function Home(): ReactNode {
         <section className={styles.section}>
           <div className="container">
             <div className={styles.sectionHeading}>
-              <span className={styles.kicker}>Topic Entry Points</span>
-              <h2>主題入口</h2>
+              <span className={styles.kicker}>Current Tracks</span>
+              <h2>目前主題入口</h2>
               <p>
-                目前先以單一網站整合六條知識線，未來可以繼續擴充新主題，而不需要拆成多個網站。
+                目前站內先保留幾條已經明確的主題線。`Modern C++` 先維持在獨立 repo，等整理出完整入口後再放進站內。
               </p>
             </div>
             <div className={styles.topicGrid}>
@@ -214,7 +189,7 @@ export default function Home(): ReactNode {
               <span className={styles.kicker}>GitHub</span>
               <h2>Repository Links</h2>
               <p>
-                網站是 Knowledge Hub 的入口，底層筆記可以維持分主題演化。未來若你把內容逐步回收到單一 repo，這裡也能自然調整。
+                目前先讓網站做入口，底層筆記仍可在各自 repo 維護，之後再決定哪些內容要正式回收到這個 Hub。
               </p>
             </div>
             <div className={styles.repoGrid}>

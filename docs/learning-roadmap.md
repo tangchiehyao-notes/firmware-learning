@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Learning Roadmap
@@ -54,9 +54,8 @@ flowchart LR
 先有 Linux Internals 與 Modern C++ 的底，再回來看 OpenBMC，理解會更穩。
 :::
 
-## 長期維護策略
+## 目前的收斂方式
 
-- 每個主題先有 category landing page
-- 每個 category 底下再拆子目錄
-- 一個主題只要開始累積，就維持固定命名與固定章節習慣
-- 每篇文件都盡量保留 debug perspective 與 interview takeaway
+- 站內先以 `Roadmap + Introduction + Topic Landing Page` 為主
+- 詳細內容目前仍可維持在各自獨立 repo
+- 等主題累積到一定程度，再往下展開子章節
