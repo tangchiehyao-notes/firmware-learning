@@ -108,7 +108,7 @@ const repositoryLinks = [
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="OpenBMC / Embedded Linux Knowledge Hub"
+      title="Firmware Learning Hub"
       description="OpenBMC / Embedded Linux 學習筆記、技術成長地圖與面試作品集網站。">
       <main>
         <section className={styles.hero}>
@@ -116,7 +116,7 @@ export default function Home(): ReactNode {
             <div className={styles.heroInner}>
               <div className={styles.heroCopy}>
                 <span className={styles.eyebrow}>Firmware Engineer Knowledge Base</span>
-                <h1 className={styles.heroTitle}>OpenBMC Learning Hub</h1>
+                <h1 className={styles.heroTitle}>Firmware Learning Hub</h1>
                 <p className={styles.heroSubtitle}>
                   以 OpenBMC / Embedded Linux 為主軸，集中整理 Linux internals、Modern
                   C++、Yocto、Docker 與 Firmware Debugging 的長期知識庫。

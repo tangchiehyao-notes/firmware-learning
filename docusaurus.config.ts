@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'OpenBMC Learning Hub',
+  title: 'Firmware Learning Hub',
   tagline: 'OpenBMC / Embedded Linux 學習地圖、技術筆記與長期作品集',
   favicon: 'img/favicon.svg',
 
@@ -79,9 +79,9 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'OpenBMC Learning Hub',
+      title: 'Firmware Learning Hub',
       logo: {
-        alt: 'OpenBMC Learning Hub Logo',
+        alt: 'Firmware Learning Hub Logo',
         src: 'img/logo.svg',
       },
       items: [

@@ -2,7 +2,7 @@
   <rect width="1200" height="640" rx="32" fill="#FFFDF7"/>
   <rect x="40" y="40" width="1120" height="560" rx="28" fill="#F3FBF9" stroke="#C7E8E2" stroke-width="2"/>
   <rect x="90" y="86" width="1020" height="88" rx="20" fill="#11353B"/>
-  <text x="128" y="140" fill="#FFFDF7" font-family="Arial, sans-serif" font-size="34" font-weight="700">OpenBMC Learning Hub</text>
+  <text x="128" y="140" fill="#FFFDF7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Firmware Learning Hub</text>
   <text x="128" y="170" fill="#BFE7E0" font-family="Arial, sans-serif" font-size="18">Single-site knowledge base for OpenBMC / Embedded Linux / Firmware Engineering</text>
   <rect x="90" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>
   <rect x="352" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>

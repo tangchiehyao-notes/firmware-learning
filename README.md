@@ -1,4 +1,4 @@
-# OpenBMC Learning Hub
+# Firmware Learning Hub
 
 以 Docusaurus 建立的個人技術知識庫網站，用來集中整理：
 
