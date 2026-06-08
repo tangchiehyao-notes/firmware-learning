@@ -1,0 +1,10 @@
+{
+  "label": "Methodology",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Debugging Methodology",
+    "slug": "/firmware-debugging/methodology",
+    "description": "先建立 debug 思維，再談工具與個案。"
+  }
+}

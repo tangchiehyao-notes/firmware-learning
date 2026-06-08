@@ -1,0 +1,10 @@
+{
+  "label": "Yocto",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Yocto",
+    "slug": "/yocto",
+    "description": "理解 OpenBMC / Embedded Linux 背後的 build system、layer 與 recipe。"
+  }
+}

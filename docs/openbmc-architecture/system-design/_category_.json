@@ -1,0 +1,10 @@
+{
+  "label": "System Design",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "OpenBMC System Design",
+    "slug": "/openbmc-architecture/system-design",
+    "description": "把 OpenBMC 看成一個整體系統，而不是一堆孤立 daemon。"
+  }
+}

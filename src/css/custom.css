@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0d6a63;
+  --ifm-color-primary-darker: #0c645d;
+  --ifm-color-primary-darkest: #0a534d;
+  --ifm-color-primary-light: #118279;
+  --ifm-color-primary-lighter: #12887f;
+  --ifm-color-primary-lightest: #16a394;
+  --ifm-background-color: #fffefb;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-navbar-background-color: rgba(255, 254, 251, 0.92);
+  --ifm-font-family-base: 'IBM Plex Sans', 'Noto Sans TC', sans-serif;
+  --ifm-heading-font-family: 'IBM Plex Sans', 'Noto Sans TC', sans-serif;
+  --ifm-font-family-monospace: 'IBM Plex Mono', ui-monospace, monospace;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-color: #153642;
+  --ifm-link-color: #0f766e;
+  --ifm-menu-color-active: #0f766e;
+  --ifm-footer-background-color: #11353b;
+  --docusaurus-highlighted-code-line-bg: rgba(15, 118, 110, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #27424d;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(15, 118, 110, 0.08);
+}
+
+.navbar__title {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.theme-doc-markdown {
+  max-width: 52rem;
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  letter-spacing: -0.03em;
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+}
+
+.theme-doc-markdown img {
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  background: #ffffff;
+}
+
+.theme-admonition {
+  border-width: 1px;
+  border-radius: 1rem;
+}
+
+.menu__link {
+  border-radius: 0.75rem;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pagination-nav__link {
+  border-radius: 1rem;
+}
+
+.theme-code-block {
+  border-radius: 1rem;
+}

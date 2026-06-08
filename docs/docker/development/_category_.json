@@ -1,0 +1,10 @@
+{
+  "label": "Development",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Docker for Development",
+    "slug": "/docker/development",
+    "description": "從 container 基本觀念走到開發環境固定化。"
+  }
+}

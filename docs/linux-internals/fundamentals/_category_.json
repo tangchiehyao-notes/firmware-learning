@@ -1,0 +1,10 @@
+{
+  "label": "Fundamentals",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Linux Fundamentals",
+    "slug": "/linux-internals/fundamentals",
+    "description": "從 privilege boundary、system call 與 memory protection 開始建立 Linux 直覺。"
+  }
+}

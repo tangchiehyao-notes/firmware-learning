@@ -1,0 +1,10 @@
+{
+  "label": "Build System",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Yocto Build System",
+    "slug": "/yocto/build-system",
+    "description": "從 layer、recipe 到 build flow 的核心結構。"
+  }
+}

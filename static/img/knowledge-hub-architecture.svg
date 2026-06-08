@@ -1,0 +1,26 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" rx="32" fill="#FFFDF7"/>
+  <rect x="40" y="40" width="1120" height="560" rx="28" fill="#F3FBF9" stroke="#C7E8E2" stroke-width="2"/>
+  <rect x="90" y="86" width="1020" height="88" rx="20" fill="#11353B"/>
+  <text x="128" y="140" fill="#FFFDF7" font-family="Arial, sans-serif" font-size="34" font-weight="700">OpenBMC Learning Hub</text>
+  <text x="128" y="170" fill="#BFE7E0" font-family="Arial, sans-serif" font-size="18">Single-site knowledge base for OpenBMC / Embedded Linux / Firmware Engineering</text>
+  <rect x="90" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>
+  <rect x="352" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>
+  <rect x="614" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>
+  <rect x="876" y="220" width="230" height="132" rx="20" fill="#FFFFFF" stroke="#C7E8E2" stroke-width="2"/>
+  <text x="118" y="270" fill="#11353B" font-family="Arial, sans-serif" font-size="24" font-weight="700">Linux Internals</text>
+  <text x="118" y="306" fill="#4C6A76" font-family="Arial, sans-serif" font-size="17">System call, memory, process, I/O, debug</text>
+  <text x="380" y="270" fill="#11353B" font-family="Arial, sans-serif" font-size="24" font-weight="700">Modern C++</text>
+  <text x="380" y="306" fill="#4C6A76" font-family="Arial, sans-serif" font-size="17">RAII, ownership, move semantics, template</text>
+  <text x="642" y="270" fill="#11353B" font-family="Arial, sans-serif" font-size="24" font-weight="700">OpenBMC</text>
+  <text x="642" y="306" fill="#4C6A76" font-family="Arial, sans-serif" font-size="17">D-Bus, services, sensors, Redfish, PLDM</text>
+  <text x="904" y="270" fill="#11353B" font-family="Arial, sans-serif" font-size="24" font-weight="700">Yocto / Docker</text>
+  <text x="904" y="306" fill="#4C6A76" font-family="Arial, sans-serif" font-size="17">Build flow, dev env, CI, reproducibility</text>
+  <rect x="200" y="420" width="800" height="112" rx="24" fill="#11353B"/>
+  <text x="250" y="468" fill="#FFFDF7" font-family="Arial, sans-serif" font-size="28" font-weight="700">Firmware Debugging &amp; Interview Portfolio</text>
+  <text x="250" y="505" fill="#CFEDE7" font-family="Arial, sans-serif" font-size="18">Root cause analysis, real-world debugging flow, knowledge accumulation, and long-term public portfolio</text>
+  <path d="M205 352L205 420" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M467 352L467 420" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M729 352L729 420" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M991 352L991 420" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+</svg>
