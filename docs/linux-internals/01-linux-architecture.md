@@ -1,5 +1,7 @@
 ---
 title: Linux 架構
+sidebar_position: 2
+displayed_sidebar: linuxInternalsSidebar
 ---
 
 ## 一句話總結

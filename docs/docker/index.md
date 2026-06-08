@@ -1,6 +1,7 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 title: Docker
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線會整理 Docker 在 Firmware / Embedded Linux 開發中的角色，重點放在開發環境、build 與 CI。

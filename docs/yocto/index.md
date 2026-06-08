@@ -1,6 +1,7 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 title: Yocto
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線會整理 Embedded Linux / OpenBMC 背後的 build system 觀念。

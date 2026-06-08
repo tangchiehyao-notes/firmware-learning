@@ -1,5 +1,7 @@
 ---
 title: Modern C++
+sidebar_position: 1
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線目前先不放進站內主導航。

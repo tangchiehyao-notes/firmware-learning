@@ -1,6 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 title: Linux Internals
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線會放 Linux 基礎觀念、system 行為理解與 debug 視角。

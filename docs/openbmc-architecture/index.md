@@ -1,6 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 title: OpenBMC Architecture
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線會整理 OpenBMC 的系統視角，重點是把 service、D-Bus、driver 與 hardware path 串成同一張圖。
