@@ -6,7 +6,7 @@ sidebar_position: 1
 
 這份 Roadmap 不是要把所有主題照教科書排序，而是以 Firmware Engineer 的學習曲線來安排。
 
-## 建議學習順序
+## 學習順序
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ flowchart LR
 先有 Linux Internals 與 Modern C++ 的底，再回來看 OpenBMC，理解會更穩。
 :::
 
-## 目前的收斂方式
+## 目前的維護方式
 
 - 站內先以 `Roadmap + Introduction + Topic Landing Page` 為主
 - 詳細內容目前仍可維持在各自獨立 repo

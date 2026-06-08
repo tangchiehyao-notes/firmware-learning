@@ -4,7 +4,7 @@ title: Modern C++
 
 這條主線目前先不放進站內主導航。
 
-原因很單純：
+## 目前定位
 
 - 我希望先把 Linux / OpenBMC / Yocto / Docker / Firmware Debugging 的入口收斂乾淨
 - `Modern C++` 之後會等章節結構更完整，再正式加回 sidebar

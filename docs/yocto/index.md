@@ -5,7 +5,7 @@ title: Yocto
 
 這條主線會整理 Embedded Linux / OpenBMC 背後的 build system 觀念。
 
-目前先保留主題入口，後續再逐步補回：
+## 預計收錄主題
 
 - What is Yocto
 - Poky / BitBake / OpenEmbedded

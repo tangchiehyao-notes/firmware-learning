@@ -5,7 +5,7 @@ title: Linux Internals
 
 這條主線會放 Linux 基礎觀念、system 行為理解與 debug 視角。
 
-目前先保留主題入口，後續再逐步補回：
+## 預計收錄主題
 
 - User Space vs Kernel Space
 - System Call

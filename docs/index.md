@@ -4,13 +4,13 @@ sidebar_position: 2
 
 # Introduction
 
-這個網站先定位成單一入口，用來整理 OpenBMC / Embedded Linux 的學習地圖、知識骨架與各主題 repo。
+這個網站目前先定位成單一入口，用來整理 OpenBMC / Embedded Linux 的學習地圖、知識骨架與各主題 repo。
 
-目前我希望它先做好三件事：
+## 這個頁面的角色
 
-1. 先提供清楚的 `Learning Roadmap`
-2. 先整理每條主題線的入口頁
-3. 讓未來的內容可以逐步回收到同一個網站
+- 提供整個網站的使用方式
+- 說明目前有哪些主題已經進站內
+- 說明哪些主題還先維持在獨立 repo
 
 ## 目前主導航
 
@@ -24,7 +24,7 @@ sidebar_position: 2
 
 `Modern C++` 目前先保留在獨立 repo，之後等內容整理出比較完整的 introduction 與章節結構，再加回站內主導航。
 
-## GitHub Repositories
+## 對應 Repository
 
 | Repository | 用途 |
 | --- | --- |
@@ -35,7 +35,7 @@ sidebar_position: 2
 | [docker-notes](https://github.com/tangchiehyao-notes/docker-notes) | Docker 筆記 |
 | [firmware-debugging-notes](https://github.com/tangchiehyao-notes/firmware-debugging-notes) | Firmware Debugging 筆記 |
 
-## 使用方式
+## 建議使用方式
 
 - 先看 [Learning Roadmap](./learning-roadmap.md)
 - 再從 `Linux Internals` 開始進入第一條主線

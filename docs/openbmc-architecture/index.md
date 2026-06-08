@@ -5,7 +5,7 @@ title: OpenBMC Architecture
 
 這條主線會整理 OpenBMC 的系統視角，重點是把 service、D-Bus、driver 與 hardware path 串成同一張圖。
 
-目前先保留主題入口，後續再逐步補回：
+## 預計收錄主題
 
 - OpenBMC Overview
 - Boot Flow
