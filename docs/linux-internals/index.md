@@ -9,18 +9,13 @@ displayed_sidebar: knowledgeHubSidebar
 
 ## 預計收錄主題
 
-- Linux Internals Overview
-- User Space vs Kernel Space
+- [Linux Internals Overview](./01-linux-architecture.md)
+- [User Space vs Kernel Space](./02-user-space-vs-kernel-space.md)
 - System Call
 - Process / Thread
 - Memory Management
 - Filesystem / I/O
 - Linux Debugging
-
-## 已同步到網站的文章
-
-- [Linux Internals Overview](./01-linux-architecture.md)
-- [User Space vs Kernel Space](./02-user-space-vs-kernel-space.md)
 
 ## Repository
 
@@ -28,6 +23,6 @@ displayed_sidebar: knowledgeHubSidebar
 
 ## 目前狀態
 
-- 第一篇入口總覽與第二篇 User/Kernel boundary 文章已同步進站內
+- 目前已同步 2 篇文章，後續章節會逐步回收到站內
 - 詳細內容會依整理進度逐步回收到這個 Hub
 - `linux-internals-notes` 仍保留作為原始筆記 repo
