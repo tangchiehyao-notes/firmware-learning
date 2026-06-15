@@ -5,17 +5,25 @@ displayed_sidebar: knowledgeHubSidebar
 ---
 
 這條主線會放 Linux 基礎觀念、system 行為理解與 debug 視角。
-第一篇是入口總覽，後面再逐步往 User Space / Kernel boundary、process、system call、memory 與 debug 展開。
+第一篇是入口總覽，後面再逐步往 User Space / Kernel boundary、boot path、board description、driver model、process、system call、memory 與 debug 展開。
 
 ## 預計收錄主題
 
 - [Linux Internals Overview](./01-linux-architecture.md)
 - [User Space vs Kernel Space](./02-user-space-vs-kernel-space.md)
-- System Call
+- Linux Boot Process
+- Device Tree
+- Linux Driver Model
+- U-Boot
 - Process / Thread
+- System Call
+- IPC
+- Synchronization
 - Memory Management
 - Filesystem / I/O
+- Networking Basics
 - Linux Debugging
+- Interview Questions
 
 ## Repository
 
