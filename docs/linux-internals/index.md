@@ -12,9 +12,9 @@ displayed_sidebar: knowledgeHubSidebar
 - [Linux Internals Overview](./01-linux-architecture.md)
 - [User Space vs Kernel Space](./02-user-space-vs-kernel-space.md)
 - [Linux Boot Process](./03-linux-boot-process.md)
-- Device Tree
-- Linux Driver Model
-- U-Boot
+- [Device Tree](./04-device-tree.md)
+- [Linux Driver Model](./05-linux-driver-model.md)
+- [U-Boot](./06-u-boot.md)
 - Process / Thread
 - System Call
 - IPC
@@ -31,6 +31,6 @@ displayed_sidebar: knowledgeHubSidebar
 
 ## 目前狀態
 
-- 目前已同步 3 篇文章，後續章節會逐步回收到站內
+- 目前已同步 6 篇文章，後續章節會逐步回收到站內
 - 詳細內容會依整理進度逐步回收到這個 Hub
 - `linux-internals-notes` 仍保留作為原始筆記 repo
