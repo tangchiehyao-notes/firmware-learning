@@ -1,7 +1,8 @@
 ---
 title: Linux Driver Model
 sidebar_position: 6
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/linux-driver-model
 ---
 
 ## Metadata

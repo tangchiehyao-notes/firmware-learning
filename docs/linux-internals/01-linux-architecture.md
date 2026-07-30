@@ -1,7 +1,8 @@
 ---
 title: Linux Internals Overview
 sidebar_position: 2
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/overview
 ---
 
 ## 一句話總結

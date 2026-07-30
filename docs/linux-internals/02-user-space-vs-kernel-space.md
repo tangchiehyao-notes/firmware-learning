@@ -1,7 +1,8 @@
 ---
 title: User Space vs Kernel Space
 sidebar_position: 3
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/user-space-vs-kernel-space
 ---
 
 ## 一句話總結

@@ -1,7 +1,8 @@
 ---
 title: U-Boot
 sidebar_position: 7
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/u-boot
 ---
 
 ## Metadata

@@ -1,22 +1,24 @@
 ---
-title: Modern C++
+title: Modern C++ Knowledge Base
 sidebar_position: 1
 displayed_sidebar: knowledgeHubSidebar
+slug: /knowledge-base/modern-cpp
 ---
 
-這條主線目前先不放進站內主導航。
+這一頁先保留在 `Knowledge Base`，不直接放進四大 roadmap 主線，但也不刪除原始筆記。
 
 ## 目前定位
 
-- 我希望先把 Linux / OpenBMC / Yocto / Docker / Firmware Debugging 的入口收斂乾淨
-- `Modern C++` 之後會等章節結構更完整，再正式加回 sidebar
+- 先把 Linux / OpenBMC / Labs / Interview 的主骨架收斂乾淨
+- `Modern C++` 之後會等章節結構更完整，再重新接回主線
+- 原始 repo 會持續保留，避免改版時遺失資料
 
 ## Repository
 
 - [modern-cpp-notes](https://github.com/tangchiehyao-notes/modern-cpp-notes)
 
-## 暫時定位
+## 暫時安排
 
 - 先保留在學習地圖中
-- 先維持獨立 repo
-- 等內容成熟後再整合進這個 Hub
+- 先維持獨立 repo 與知識庫入口
+- 等內容成熟後再整合進主要 roadmap

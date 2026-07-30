@@ -1,61 +1,80 @@
 ---
-sidebar_position: 1
+title: Learning Roadmap
+sidebar_position: 2
+displayed_sidebar: knowledgeHubSidebar
 ---
 
 # Learning Roadmap
 
-這份 Roadmap 不是要把所有主題照教科書排序，而是以 Firmware Engineer 的學習曲線來安排。
+這份 roadmap 不是把主題照教科書排列，而是依照 firmware engineer 真正會遇到的工作路徑來安排。
 
 ## 學習順序
 
 ```mermaid
 flowchart LR
-    A[Linux Internals] --> B[Modern C++]
-    B --> C[OpenBMC Architecture]
-    C --> D[Yocto]
-    C --> E[Docker]
-    A --> F[Firmware Debugging]
-    B --> F
-    C --> F
-    D --> F
-    E --> F
+    A[Architecture] --> B[Components]
+    B --> C[Labs]
+    C --> D[Interview]
+    A --> C
+    B --> D
 ```
 
-## Phase 規劃
+## 四個階段
 
-### Phase 1: Linux Fundamentals
+### Stage 1: Architecture
 
-- 先建立 user space / kernel space、system call、process、thread、memory 的底層概念
-- 這一層會直接影響後面看 OpenBMC service 與 debug 的速度
+- 先建立 OpenBMC、Linux、driver、bus、protocol 的整體地圖
+- 先回答「資料從哪裡來、狀態在哪裡、哪一層負責什麼」
+- 現階段既有 Linux Internals 文章會是這一區最早的內容資產
 
-### Phase 2: Modern C++ for Firmware
+### Stage 2: Components
 
-- 把語法記憶轉成 ownership、lifetime、abstraction 與可維護性的理解
-- 這層會影響你之後寫 service、library 與 debug 複雜問題的品質
+- 把每個 daemon、library、service 放回系統上下文
+- 不是只記元件名稱，而是理解：
+  - 它是什麼
+  - 誰呼叫它
+  - 它呼叫誰
+  - 用什麼 IPC
+  - 程式入口在哪裡
 
-### Phase 3: OpenBMC Architecture
+### Stage 3: Labs
 
-- 建立 OpenBMC 的系統觀，而不是只記得零散元件名稱
-- 這一層把 Linux 與實際 BMC 平台連起來
+- 把 build、trace、debug 變成可以自己執行與驗證的實作
+- 第一版先建立 Build、Trace、Debug、Mini Project 四條練習路徑
+- `Yocto`、`Docker`、`Firmware Debugging` 會先作為這一區的既有內容入口
 
-### Phase 4: Build and Delivery
+### Stage 4: Interview
 
-- 用 Yocto 理解 build system
-- 用 Docker 固定開發環境與 CI 行為
+- 最後確認自己是否真的能說清楚、畫出來、讀得動 code、答得出 debug 題
+- 如果這一階段講不清楚，前面的理解通常還不夠穩
 
-### Phase 5: Debugging as a Core Skill
+## 單頁閱讀順序
 
-- 把 Linux、C++、OpenBMC、build system 的知識，最後都收斂到真實除錯能力
+每一個主題頁面都盡量依照同一個順序設計：
 
-:::note 為什麼不是先學 OpenBMC
+1. Architecture
+2. Components
+3. Terminology
+4. Data Flow
+5. IPC
+6. Code Mapping
+7. Debug
+8. Checkpoint
 
-如果太早直接跳進 OpenBMC，很容易把 service、D-Bus、sensor、Redfish 當成名詞背誦。
+這個順序的目的，是避免一開始就被規格或名詞淹沒。
 
-先有 Linux Internals 與 Modern C++ 的底，再回來看 OpenBMC，理解會更穩。
-:::
+## 第一版優先範圍
 
-## 目前的維護方式
+- 新首頁
+- 新 sidebar
+- Architecture / Components / Labs / Interview 目錄骨架
+- 各分類 intro 頁
+- 元件統一模板
+- `phosphor-mctp` 示範骨架
+- 既有內容重新分類但不刪除
 
-- 站內先以 `Roadmap + Introduction + Topic Landing Page` 為主
-- 詳細內容目前仍可維持在各自獨立 repo
-- 等主題累積到一定程度，再往下展開子章節
+## 保留原有筆記的方式
+
+- 不直接丟掉原本的 landing page 與外部 repo
+- 先把可沿用內容接到新的資訊架構
+- 未納入第一版主線的內容，先放在 `Knowledge Base`

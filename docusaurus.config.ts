@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Firmware Learning Hub',
-  tagline: 'OpenBMC / Embedded Linux 學習地圖、技術筆記與長期作品集',
+  title: 'Firmware Engineer Roadmap',
+  tagline: 'OpenBMC / Embedded Linux system thinking, code mapping, labs, and interview practice',
   favicon: 'img/favicon.svg',
 
   future: {
@@ -79,16 +79,16 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'Firmware Learning Hub',
+      title: 'Firmware Engineer Roadmap',
       logo: {
-        alt: 'Firmware Learning Hub Logo',
+        alt: 'Firmware Engineer Roadmap Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           to: '/docs',
           position: 'left',
-          label: 'Docs',
+          label: 'Start',
           activeBaseRegex: '^/docs/',
         },
         {
@@ -97,48 +97,37 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'dropdown',
-          label: 'Learning Tracks',
+          to: '/docs/architecture',
+          label: 'Architecture',
           position: 'left',
-          items: [
-            {
-              label: 'Linux Internals',
-              to: '/docs/linux-internals',
-            },
-            {
-              label: 'OpenBMC Architecture',
-              to: '/docs/openbmc-architecture',
-            },
-            {
-              label: 'Yocto',
-              to: '/docs/yocto',
-            },
-            {
-              label: 'Docker',
-              to: '/docs/docker',
-            },
-            {
-              label: 'Firmware Debugging',
-              to: '/docs/firmware-debugging',
-            },
-          ],
+        },
+        {
+          to: '/docs/components',
+          label: 'Components',
+          position: 'left',
+        },
+        {
+          to: '/docs/labs',
+          label: 'Labs',
+          position: 'left',
+        },
+        {
+          to: '/docs/interview',
+          label: 'Interview',
+          position: 'left',
         },
         {
           type: 'dropdown',
-          label: 'Repositories',
+          label: 'References',
           position: 'right',
           items: [
             {
-              label: 'Knowledge Hub Site',
+              label: 'Roadmap Repository',
               href: 'https://github.com/tangchiehyao-notes/firmware-learning',
             },
             {
               label: 'linux-internals-notes',
               href: 'https://github.com/tangchiehyao-notes/linux-internals-notes',
-            },
-            {
-              label: 'modern-cpp-notes',
-              href: 'https://github.com/tangchiehyao-notes/modern-cpp-notes',
             },
             {
               label: 'openbmc-architecture-notes',
@@ -173,36 +162,36 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Roadmap',
           items: [
             {
-              label: 'Knowledge Hub Overview',
+              label: 'Roadmap Home',
               to: '/docs',
             },
             {
-              label: 'Learning Roadmap',
-              to: '/docs/learning-roadmap',
+              label: 'Architecture',
+              to: '/docs/architecture',
             },
             {
-              label: 'Linux Internals',
-              to: '/docs/linux-internals',
+              label: 'Components',
+              to: '/docs/components',
             },
           ],
         },
         {
-          title: 'Learning Tracks',
+          title: 'Practice',
           items: [
             {
-              label: 'OpenBMC Architecture',
-              to: '/docs/openbmc-architecture',
+              label: 'Labs',
+              to: '/docs/labs',
             },
             {
-              label: 'Yocto',
-              to: '/docs/yocto',
+              label: 'Interview',
+              to: '/docs/interview',
             },
             {
-              label: 'Firmware Debugging',
-              to: '/docs/firmware-debugging',
+              label: 'Knowledge Base',
+              to: '/docs/knowledge-base',
             },
           ],
         },
@@ -210,7 +199,7 @@ const config: Config = {
           title: 'GitHub',
           items: [
             {
-              label: 'Knowledge Hub Repo',
+              label: 'Roadmap Repo',
               href: 'https://github.com/tangchiehyao-notes/firmware-learning',
             },
             {
@@ -220,7 +209,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} TangChiehYao. Built with Docusaurus and deployed on GitHub Pages.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TangChiehYao. Built with Docusaurus and published as a firmware learning portfolio.`,
     },
     prism: {
       theme: prismThemes.github,

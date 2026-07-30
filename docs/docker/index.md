@@ -1,10 +1,13 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Docker
 displayed_sidebar: knowledgeHubSidebar
+slug: /labs/build/docker
 ---
 
-這條主線會整理 Docker 在 Firmware / Embedded Linux 開發中的角色，重點放在開發環境、build 與 CI。
+這頁先作為 `Labs / Build` 的輔助主題，回答：
+
+> 要怎麼把 build 與開發環境固定下來，讓別人也能重現同一個問題？
 
 ## 預計收錄主題
 
@@ -21,5 +24,5 @@ displayed_sidebar: knowledgeHubSidebar
 
 ## 目前狀態
 
-- 站內先維持入口頁
-- 詳細內容先放在獨立 repo
+- 目前先作為 build lab 的 supporting topic
+- 詳細內容先維持在獨立 repo

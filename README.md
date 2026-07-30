@@ -1,38 +1,79 @@
-# Firmware Learning Hub
+# Firmware Engineer Roadmap
 
-以 Docusaurus 建立的個人技術知識庫網站。
+以 Docusaurus 建立的 Firmware Engineer 學習網站，主軸是把 OpenBMC / Embedded Linux 的零散筆記整理成可以持續擴充的 roadmap。
 
-目前的定位是單一入口站點，用來集中整理：
+## 目標
 
-- OpenBMC / Embedded Linux 學習筆記
-- Linux Internals 與 Firmware Debugging 思維
-- Modern C++ / Yocto / Docker 技術地圖
-- 長期維護的面試作品集與技術成長軌跡
+這個網站不只是知識整理，而是要幫助 Firmware Engineer 建立：
 
-## 站點定位
+- 系統架構理解
+- component 關係判讀
+- IPC 與資料流理解
+- source code 對照能力
+- build、trace、debug 實作能力
+- 面試表達能力
 
-- 單一網站管理知識庫入口
-- Markdown-driven 文件維護
-- GitHub Pages 自動部署
-- 未來可逐步把獨立 repo 內容回收進站內
+## 網站主架構
+
+```text
+Firmware Engineer Roadmap
+├── Architecture
+│   ├── OpenBMC
+│   ├── Linux
+│   ├── Driver
+│   ├── IPC
+│   ├── Bus
+│   └── Protocol
+├── Components
+│   ├── phosphor-mctp
+│   ├── pldmd
+│   ├── sdbusplus
+│   ├── libpldm
+│   └── systemd
+├── Labs
+│   ├── Build
+│   ├── Trace
+│   ├── Debug
+│   └── Mini Project
+├── Interview
+│   ├── Explain
+│   ├── Draw
+│   ├── Code Reading
+│   └── Debug Questions
+└── Knowledge Base
+    └── Modern C++
+```
+
+## 內容設計原則
+
+每個主題頁盡量依照同一個順序建立理解：
+
+1. Architecture
+2. Components
+3. Terminology
+4. Data Flow
+5. IPC
+6. Code Mapping
+7. Debug
+8. Checkpoint
 
 ## 技術選型
 
-- Framework: Docusaurus 3
+- Framework: Docusaurus 3.10.1
+- Language: TypeScript / React
 - Content model: Markdown / MDX
 - Hosting: GitHub Pages
-- CI/CD: GitHub Actions
 - Search: local search plugin
 - Diagram: Mermaid
 
-## 本地啟動
+## 本地開發
 
 ```bash
 npm install
 npm start
 ```
 
-開發站台會啟在 `http://localhost:3000/firmware-learning/`。
+開發站台預期會啟在 `http://localhost:3000/firmware-learning/`。
 
 ## Build
 
@@ -41,34 +82,34 @@ npm run build
 npm run serve
 ```
 
-## 目前站內頁面
+## 目前第一版範圍
 
-- `Learning Roadmap`
-- `Introduction`
-- `Linux Internals`
-- `OpenBMC Architecture`
-- `Yocto`
-- `Docker`
-- `Firmware Debugging`
-
-`Modern C++` 目前先保留在獨立 repo，之後再視整理進度加回站內主導航。
+- 新首頁
+- 新 sidebar
+- Architecture / Components / Labs / Interview 骨架
+- 各分類 intro 頁
+- component 統一模板
+- `phosphor-mctp` 示範骨架
+- 既有 Linux / Yocto / Docker / Debug 內容重新歸位
 
 ## 專案結構
 
 ```text
 firmware-learning/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
 ├── docs/
-│   ├── index.md
-│   ├── learning-roadmap.md
+│   ├── architecture/
+│   ├── components/
+│   ├── interview/
+│   ├── knowledge-base/
+│   ├── labs/
 │   ├── linux-internals/
-│   ├── modern-cpp/
 │   ├── openbmc-architecture/
-│   ├── yocto/
 │   ├── docker/
-│   └── firmware-debugging/
+│   ├── firmware-debugging/
+│   ├── modern-cpp/
+│   ├── yocto/
+│   ├── index.md
+│   └── learning-roadmap.md
 ├── src/
 │   ├── css/
 │   └── pages/
@@ -79,62 +120,9 @@ firmware-learning/
 └── package.json
 ```
 
-## 文件架構原則
+## 既有筆記保留方式
 
-這個網站先以單一 repo 管理所有文件，但資料夾結構已經預留未來擴充：
-
-- 每個主題各自獨立資料夾
-- 各主題底下可再切多層子目錄
-- 左側 sidebar 由 `sidebars.ts` 控制主要順序
-- 每個主題先以 landing page 形式維護
-
-這樣做的好處：
-
-- 現在先維持單站集中管理
-- 未來若部分主題獨立成 repo，也能把內容平順搬移
-- 主導航不會過早變得太複雜
-
-## GitHub Pages 部署
-
-這個專案已包含 `.github/workflows/deploy.yml`，推到 GitHub 後即可透過 Actions 自動部署。
-
-### 建議的 GitHub Pages 設定
-
-1. 在 GitHub 建立 repo：`firmware-learning`
-2. 把這個專案 push 到 `main`
-3. 到 `Settings > Pages`
-4. `Build and deployment` 選擇 `GitHub Actions`
-
-之後每次 push 到 `main`，GitHub Actions 都會自動 build 並部署。
-
-## 重要設定
-
-目前 `docusaurus.config.ts` 預設使用：
-
-- `url`: `https://tangchiehyao-notes.github.io`
-- `baseUrl`: `/firmware-learning/`
-- `organizationName`: `tangchiehyao-notes`
-- `projectName`: `firmware-learning`
-
-如果你未來更改 repo 名稱，請同步更新：
-
-- `baseUrl`
-- `projectName`
-
-## 已啟用功能
-
-- Mermaid Diagram
-- Code Block
-- Admonition / Callout
-- Table
-- Image
-- Search
-- Auto-generated sidebar
-- Multi-level docs folders
-
-## 維護建議
-
-- 先維持 `Roadmap + Introduction + Topic Landing Page` 的骨架
-- 詳細內容可以先留在各自獨立 repo
-- 等單一主題累積到一定程度，再回收到 `docs/`
-- 每篇文件盡量維持學習筆記、面試視角與 debug 視角
+- `Linux Internals` 既有文章直接接到 `Architecture / Linux`
+- `Yocto`、`Docker`、`Firmware Debugging` 重新歸到 `Labs`
+- `Modern C++` 先保留在 `Knowledge Base`
+- 原本獨立 repo 繼續作為原始筆記來源

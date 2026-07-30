@@ -1,42 +1,56 @@
 ---
-sidebar_position: 2
+title: Firmware Engineer Roadmap
+sidebar_position: 1
+displayed_sidebar: knowledgeHubSidebar
 ---
 
-# Introduction
+# Firmware Engineer Roadmap
 
-這個網站目前先定位成單一入口，用來整理 OpenBMC / Embedded Linux 的學習地圖、知識骨架與各主題 repo。
+這個站從「零散筆記入口」改成「Firmware Engineer Roadmap」。
 
-## 這個頁面的角色
+核心目標不是把所有知識收成百科，而是幫助自己建立真正能在工作與面試裡使用的能力：
 
-- 提供整個網站的使用方式
-- 說明目前有哪些主題已經進站內
-- 說明哪些主題還先維持在獨立 repo
+- 系統架構理解
+- component 關係判讀
+- IPC 與資料流追蹤
+- source code 對照能力
+- build、trace、debug 實作能力
+- 面試時的說明與畫圖能力
 
-## 目前主導航
+## 四個主要區域
 
-- Linux Internals
-- OpenBMC Architecture
-- Yocto
-- Docker
-- Firmware Debugging
+| 區域 | 你要先回答的問題 | 第一版狀態 |
+| --- | --- | --- |
+| Architecture | 整個 OpenBMC / Linux 系統有哪些 layer 與責任邊界？ | 已建立主骨架，Linux 既有文章已接入 |
+| Components | 每個 daemon、library、service 誰呼叫誰、用什麼 IPC？ | 已建立統一模板與 `phosphor-mctp` 示範 |
+| Labs | 要怎麼 build、trace、debug 才算真的會？ | 已建立 Build / Trace / Debug / Mini Project 路徑 |
+| Interview | 我能不能解釋、畫圖、讀 code、回答除錯題？ | 已建立面試練習骨架 |
 
-## 暫時不放進主導航的主題
+## 每頁的設計原則
 
-`Modern C++` 目前先保留在獨立 repo，之後等內容整理出比較完整的 introduction 與章節結構，再加回站內主導航。
+新頁面盡量依照這個順序建立理解：
 
-## 對應 Repository
+1. Architecture
+2. Components
+3. Terminology
+4. Data Flow
+5. IPC
+6. Code Mapping
+7. Debug
+8. Checkpoint
 
-| Repository | 用途 |
-| --- | --- |
-| [linux-internals-notes](https://github.com/tangchiehyao-notes/linux-internals-notes) | Linux Internals 筆記 |
-| [modern-cpp-notes](https://github.com/tangchiehyao-notes/modern-cpp-notes) | Modern C++ 筆記 |
-| [openbmc-architecture-notes](https://github.com/tangchiehyao-notes/openbmc-architecture-notes) | OpenBMC 架構筆記 |
-| [yocto-notes](https://github.com/tangchiehyao-notes/yocto-notes) | Yocto 筆記 |
-| [docker-notes](https://github.com/tangchiehyao-notes/docker-notes) | Docker 筆記 |
-| [firmware-debugging-notes](https://github.com/tangchiehyao-notes/firmware-debugging-notes) | Firmware Debugging 筆記 |
+這樣做的原因很簡單：先知道這個主題在系統裡的位置，再看它跟誰互動，最後才進到 source code 與 debug。
+
+## 既有內容怎麼保留
+
+- `Linux Internals` 既有 6 篇文章直接保留，並重新歸位到 `Architecture / Linux`
+- `Yocto`、`Docker`、`Firmware Debugging` 被重新歸進 `Labs`
+- `Modern C++` 先保留在 `Knowledge Base`，不讓原始筆記消失
+- 原本的獨立 repo 仍然保留，作為長期筆記來源
 
 ## 建議使用方式
 
-- 先看 [Learning Roadmap](./learning-roadmap.md)
-- 再從 `Linux Internals` 開始進入第一條主線
-- 其他主題先以 landing page 與 repo 入口形式維護
+1. 先看 [Learning Roadmap](./learning-roadmap.md)
+2. 再進到 [Architecture](./architecture/index.md)，把系統地圖畫起來
+3. 然後進入 [Components](./components/index.md)，開始把元件對到 code 與 IPC
+4. 最後用 [Labs](./labs/index.md) 與 [Interview](./interview/index.md) 檢查自己是否真的能用

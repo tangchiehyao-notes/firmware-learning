@@ -1,7 +1,8 @@
 ---
 title: Device Tree
 sidebar_position: 5
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/device-tree
 ---
 
 ## Metadata

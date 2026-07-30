@@ -1,7 +1,8 @@
 ---
 title: Linux Boot Process
 sidebar_position: 4
-displayed_sidebar: linuxInternalsSidebar
+displayed_sidebar: knowledgeHubSidebar
+slug: /architecture/linux/linux-boot-process
 ---
 
 ## Metadata
