@@ -88,7 +88,7 @@ const focusAreas = [
 const knowledgeBaseLinks = [
   {
     label: 'Modern C++ Knowledge Base',
-    href: '/docs/knowledge-base',
+    to: '/docs/knowledge-base',
   },
   {
     label: 'Linux Internals Repo',
@@ -236,7 +236,10 @@ export default function Home(): ReactNode {
             </div>
             <div className={styles.repoGrid}>
               {knowledgeBaseLinks.map((link) => (
-                <Link key={link.label} className={styles.repoLink} href={link.href}>
+                <Link
+                  key={link.label}
+                  className={styles.repoLink}
+                  {...('to' in link ? {to: link.to} : {href: link.href})}>
                   <span>{link.label}</span>
                   <span className={styles.repoArrow}>↗</span>
                 </Link>
